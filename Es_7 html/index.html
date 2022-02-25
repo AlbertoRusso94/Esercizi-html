@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+    <section>
+        <section>
+            <form action="#">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="esempio@gmail.com" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" minlength="4" maxlength="6" placeholder="******" required>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="name" placeholder="Mario" required>
+                <label for="cognome">Cognome</label>
+                <input type="text" name="cognome" id="cognome" placeholder="Rossi" required>
+                <label for="data">Data di nascita</label>
+                <input type="date" name="data" id="data" required>
+                <label for="numero">Numero</label>
+                <input type="tel" name="numero" id="numero" placeholder="+39333502416" required>
+        </section>
+        <section>
+                <fieldset>
+                        <legend>Abbonamenti</legend>
+                            <label for="free">Gratis</label>
+                            <input type="radio" name="abbonamento" id="free" value="Gratis" checked>
+                            <label for="mesi1">Un mese €3.99</label>
+                            <input type="radio" name="abbonamento" id="mesi1" value="Un mese €3.99">
+                            <label for="mesi5">Cinque mesi €15.99</label>
+                            <input type="radio" name="abbonamento" id="mesi5" value="Cinque mesi €15.99">
+                            <label for="mesi12">Un anno €30.99</label>
+                            <input type="radio" name="abbonamento" id="mesi12" value="Un anno €30.99">
+                </fieldset>
+        </section>
+        <section>
+            <label for="pro">Vantaggi PRO</label>
+            <select name="pro" id="pro">
+                <option value="si">Si €2.99</option>
+                <option value="no">No</option>
+            </select>
+        </section>
+        <section>
+            <label for="carta">Carta di credito</label>
+            <input type="text" name="carta" id="carta" pattern="[0-9]{13,16}" minlength="13" maxlength="16" required>
+            <label for="cvc">CVC</label>
+            <input type="text" name="cvc" id="cvc" pattern="[0-9]{3}" minlength="3" maxlength="3" required>
+            <label for="scadenza">Scadenza carta</label>
+            <input type="date" name="scadenza" id="scadenza">
+        </section>
+        <section>
+            <fieldset>
+                <legend>Indirizzo di fatturazione</legend>
+                <label for="indirizzo">Indirizzo</label>
+                <input type="text" name="indirizzo" id="indirizzo" required>
+                <label for="città">Città</label>
+                <input type="text" name="città" id="città" required>
+                <label for="cap">Cap</label>
+                <input type="text" name="cap" id="cap" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
+            </fieldset>
+        </section>
+            </form>
+    </section>
+</body>
+
+</html>
