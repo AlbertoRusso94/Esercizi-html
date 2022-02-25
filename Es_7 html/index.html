@@ -15,7 +15,7 @@
 
 <body>
     <section>
-        <section>
+        <div>
             <form action="#">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" placeholder="esempio@gmail.com" required>
@@ -29,8 +29,8 @@
                 <input type="date" name="data" id="data" required>
                 <label for="numero">Numero</label>
                 <input type="tel" name="numero" id="numero" placeholder="+39333502416" required>
-        </section>
-        <section>
+        </div>
+        <div>
                 <fieldset>
                         <legend>Abbonamenti</legend>
                             <label for="free">Gratis</label>
@@ -42,23 +42,23 @@
                             <label for="mesi12">Un anno €30.99</label>
                             <input type="radio" name="abbonamento" id="mesi12" value="Un anno €30.99">
                 </fieldset>
-        </section>
-        <section>
+        </div>
+        <div>
             <label for="pro">Vantaggi PRO</label>
             <select name="pro" id="pro">
                 <option value="si">Si €2.99</option>
                 <option value="no">No</option>
             </select>
-        </section>
-        <section>
+        </div>
+        <div>
             <label for="carta">Carta di credito</label>
             <input type="text" name="carta" id="carta" pattern="[0-9]{13,16}" minlength="13" maxlength="16" required>
             <label for="cvc">CVC</label>
             <input type="text" name="cvc" id="cvc" pattern="[0-9]{3}" minlength="3" maxlength="3" required>
             <label for="scadenza">Scadenza carta</label>
             <input type="date" name="scadenza" id="scadenza">
-        </section>
-        <section>
+        </div>
+        <div>
             <fieldset>
                 <legend>Indirizzo di fatturazione</legend>
                 <label for="indirizzo">Indirizzo</label>
@@ -68,7 +68,7 @@
                 <label for="cap">Cap</label>
                 <input type="text" name="cap" id="cap" pattern="[0-9]{5}" minlength="5" maxlength="5" required>
             </fieldset>
-        </section>
+        </div>
             </form>
     </section>
 </body>
